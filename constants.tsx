@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   CheckCircle2, 
@@ -12,7 +11,10 @@ import {
   Camera, 
   FileDown,
   ArrowLeft,
-  AlertTriangle
+  AlertTriangle,
+  Square,
+  Mic,
+  Zap
 } from 'lucide-react';
 
 export const Icons = {
@@ -27,7 +29,11 @@ export const Icons = {
   Camera: Camera,
   Download: FileDown,
   Back: ArrowLeft,
-  Alert: AlertTriangle
+  Alert: AlertTriangle,
+  // Added icons for LiveAssistant
+  Stop: Square,
+  Mic: Mic,
+  Zap: Zap
 };
 
 export const COLORS = {

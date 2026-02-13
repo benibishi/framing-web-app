@@ -227,7 +227,8 @@ const renderFinalSummary = (doc: jsPDF, project: ProjectState, state: { yPos: nu
   doc.text('Summary of Deficiencies', STYLES.spacing.margin, state.yPos);
   
   doc.setFontSize(20);
-  doc.setTextColor(totalFails > 0 ? STYLES.colors.danger : [34, 197, 94]);
+  const color = totalFails > 0 ? STYLES.colors.danger : [34, 197, 94] as [number, number, number];
+  doc.setTextColor(...color);
   doc.text(`${totalFails}`, 190, state.yPos + 1, { align: 'right' });
   
   doc.setFontSize(8);

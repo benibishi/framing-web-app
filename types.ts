@@ -14,12 +14,19 @@ export interface Photo {
   label: string;
 }
 
+export interface DescriptionItem {
+  id: string;
+  text: string;
+  completed: boolean;
+}
+
 export interface ItemResult {
   id: string;
   name: string;
   status: InspectionStatus;
   round: number;
   notes: string;
+  descriptionItems?: DescriptionItem[];
   photos: Photo[];
 }
 
